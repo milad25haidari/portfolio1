@@ -18,18 +18,8 @@
       return document.querySelector(el)
     }
   }
-  const preloader = document.querySelector("#preloader")
-  const main = document.querySelector("#main")
-  function init() {
-    setTimeout(() => {
-      preloader.style.opacity = 0;
-      preloader.style.display = 'none'
-      main.style.display = 'block';
-      setTimeout(() => (main.style.opacity = 1), 50);
 
 
-    }, 6000)
-  }
   /**
      * Easy event listener function
      */
@@ -255,3 +245,23 @@
   });
 
 })()
+
+var loader;
+function loadNow(opacity) {
+  if (opacity <= 0) { displayContent(); }
+  else {
+    preloader.style.opacity = opacity;
+    window.setTimeout(function () {
+      loadNow(opacity - 0.05)
+    }, 100);
+
+  }
+}
+function displayContent() {
+  preloader.style.display = 'none';
+  document.getElementById('main').style.display = 'block';
+}
+document.addEventListener("DOMContentLoaded", function () {
+  loader = document.getElementById('preloader');
+  loadNow(1);
+})
