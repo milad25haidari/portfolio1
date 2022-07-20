@@ -440,7 +440,7 @@ section {
 .about .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #E2880Eff;
+  color: rgb(226, 136, 14);
 }
 .about .content .icon-box p {
   font-size: 15px;
@@ -511,6 +511,14 @@ section {
   position: relative;
   transition: 0.3s;
 }
+.features-img{
+  transition: 0.3s;
+  border: 2px red;
+}
+
+.features-img :hover{
+transform: scale(1.4);
+}
 .features .card-body {
   padding-top: 20px;
   position: relative;
@@ -555,7 +563,7 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-.cta {
+/* .cta {
   background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)), url("../img/IMG_1155.JPG") fixed center center;
   background-size: cover;
   padding: 60px 0;
@@ -584,13 +592,13 @@ section {
 .cta .cta-btn:hover {
   background: #E2880Eff;
   border: 2px solid #E2880Eff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services {
-  background: #000;
+  background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)), url("../img/IMG_1155.JPG") fixed center center;
   padding-bottom: 30px;
 }
 .par-ser{
