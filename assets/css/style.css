@@ -1160,6 +1160,13 @@ transform: scale(1.4);
   color: #444444;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px;
+ 
+}
+.contact .info-envelope {
+  transition: 0.3s;
+}
+.contact .info-envelope :hover{
+  transform: scale(1.1);
 }
 .contact .info-box i {
   font-size: 32px;
@@ -1468,5 +1475,5 @@ transform: scale(1.4);
 }
 
 .main{
-  transition: 4s;
+  transition: 2s;
 }
